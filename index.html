@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furniture Website</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body>
+    <section class="hero">
+      <video autoplay muted loop playsinline>
+        <source src="Images/Hero Furniture BG13.mp4" type="video/mp4" />
+      </video>
+
+      <div class="hero-content">
+        <h1>Your Place for Everything Furniture and Landscape</h1>
+        <p>We design and create inviting outdoor environments for your home and gatherings.</p>
+        <div class="hero-buttons">
+          <a class="btn" href="#cards">Explore Services</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="cards" class="card-section">
+      <h2>Our Featured Services</h2>
+      <div class="card-container">
+        <article class="card">
+          <img src="Videos/Hero Landscaping BG11.jpeg" alt="Landscaped garden and outdoor paths" />
+          <div class="card-content">
+            <h3>Landscape Design</h3>
+            <p>Thoughtful landscaping and pathways bring natural color and character to your outdoor spaces.</p>
+            <a href="#cards">Read More</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="Videos/Outside Furniture Card2.jpeg" alt="Outdoor patio furniture" />
+          <div class="card-content">
+            <h3>Patio Furniture</h3>
+            <p>Comfortable outdoor furniture creates a welcoming place for relaxing and gathering.</p>
+            <a href="#cards">Read More</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="Videos/Outside Furniture Card2.jpeg" alt="Pergola and patio covering" />
+          <div class="card-content">
+            <h3>Backyard Coverings</h3>
+            <p>Pergolas and patio covers make your backyard a more comfortable place to gather.</p>
+            <a href="#cards">Read More</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="Videos/Hero Landscaping BG11.jpeg" alt="Stone path through a landscaped garden" />
+          <div class="card-content">
+            <h3>Walking Paths</h3>
+            <p>Natural stone and pavers create inviting pathways through your landscape.</p>
+            <a href="#cards">Read More</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> VetBoss Furniture &amp; Landscape. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const cards = document.querySelectorAll(".card");
+
+      function revealCards() {
+        const triggerBottom = window.innerHeight * 0.85;
+        cards.forEach((card) => {
+          if (card.getBoundingClientRect().top < triggerBottom) {
+            card.classList.add("show");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", revealCards);
+      revealCards();
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

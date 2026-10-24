@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VetBoss Furniture & Landscape</title>
+
+    <!-- 
+   Links an external CSS file.
+   This separates styling from HTML (best practice for larger projects).
+   The file "stylesheet.css" must exist in the same folder as this HTML file. 
+  -->
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <!-- 
+    HERO SECTION
+    Large introductory section at the top of the page
+  -->
+    <section class="hero">
+      <h1>Your Place for Everything Furniture and Landscape</h1>
+    </section>
+
+    <!--
+    NAVIGATION BUTTONS SECTION
+    Simple navigation links that point to sections on the page \
+  -->
+    <div class="nav-buttons">
+      <a href="#cards">Learn More</a>
+      <a href="#cheatsheets">Cheatsheets</a>
+    </div>
+
+    <!--
+    HEADER SECTION
+    Contains the main tagline and description
+  -->
+    <header>
+      <h3>We design and create inviting outdoor environments</h3>
+      <p>Beautiful landscapes and quality furniture for your home.</p>
+    </header>
+
+    <!--
+    MAIN CONTENT AREA
+    Now contains an image gallery instead of videos
+  -->
+    <main>
+      <h2>Featured Projects</h2>
+
+      <!-- 
+      IMAGE GRID
+      Responsive grid displaying project images using placeholder images.
+    -->
+      <div class="image-grid">
+        <!-- Project Image 1 -->
+        <div class="image-card">
+          <img
+            src="https://picsum.photos/id/1018/600/400"
+            alt="Modern outdoor patio furniture set with wooden table and chairs"
+          />
+        </div>
+
+        <!-- Project Image 2 -->
+        <div class="image-card">
+          <img
+            src="https://picsum.photos/id/251/600/400"
+            alt="Beautiful landscaped garden with stone pathway and plants"
+          />
+        </div>
+
+        <!-- Project Image 3 -->
+        <div class="image-card">
+          <img
+            src="https://picsum.photos/id/160/600/400"
+            alt="Cozy outdoor lounge area with comfortable seating and lighting"
+          />
+        </div>
+      </div>
+    </main>
+
+    <!--
+    CHEATSHEET SECTION
+    Contains links to reference material
+    Uses inline styles for quick demo purposes (not recommended for production)
+  -->
+    <section
+      id="cheatsheets"
+      style="padding: 40px 20px; max-width: 800px; margin: auto"
+    >
+      <h2>Cheatsheets</h2>
+      <p>Reference guides for CSS and JavaScript:</p>
+
+    <!-- Inline styled buttons for CSS and JS cheatsheets -->
+    <div
+      style="
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      "
+    >
+      <a
+        href="auth/css-cheatsheet.html"
+        style="
+          display: block;
+          padding: 20px;
+          background: #3b82f6;
+          color: white;
+          border-radius: 8px;
+          text-decoration: none;
+          width: 200px;
+          text-align: center;
+        "
+        >CSS Cheatsheet</a
+      >
+      <a
+        href="auth/js-cheatsheet.html"
+        style="
+          display: block;
+          padding: 20px;
+          background: #10b981;
+          color: white;
+          border-radius: 8px;
+          text-decoration: none;
+          width: 200px;
+          text-align: center;
+        "
+        >JS Cheatsheet</a
+      >
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <!-- Contains copyright information at the bottom of the page -->
+  <footer>
+    <p>&copy; 2026 VetBoss. All rights reserved.</p>
+  </footer>
+  </body>
+</html>
